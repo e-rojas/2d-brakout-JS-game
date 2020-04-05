@@ -16,3 +16,13 @@ ctx.rect(160, 10, 100, 40);
 ctx.strokeStyle = 'orange';
 ctx.stroke();
 ctx.closePath();
+
+//collision detection
+//top
+if (y + dy < 0) {
+  dy = -dy;
+}
+//bottom
+if (y + dy > canvas.height) {
+  dy = -dy;
+}
